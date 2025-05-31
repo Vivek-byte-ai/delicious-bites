@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Food</title>
+  <link rel="stylesheet" href="free.css" />
+</head>
+<body>
+  <section id="order">
+    <h2>Order Food</h2>
+    <form id="orderForm">
+      <label for="food">Select Food:</label>
+      <select id="food" name="food">
+        <option value="Burger">Burger</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Salad">Salad</option>
+      </select>
+      <br /><br />
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Delivery Address"
+        required
+      />
+      <br /><br />
+      <button type="submit">Place Order</button>
+    </form>
+    <p id="orderStatus"></p>
+
+    <div id="orderTableContainer"></div>
+
+  </section>
+
+  <script src="order.js"></script>
+</body>
+</html>

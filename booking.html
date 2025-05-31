@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book a Table</title>
+  <link rel="stylesheet" href="free.css">
+</head>
+<body>
+  <section id="booking">
+    <h2>Book a Table</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      <input type="date" id="date" name="date"  placeholder="Date" required />
+      <input type="time" id="time" name="time" placeholder="Time" required />
+      <input type="number" id="guests" name="guests" placeholder="Number of guests" required />
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="bookingStatus"></p>
+     <!-- Table to display bookings -->
+  <h3>All Bookings</h3>
+  <table border="1" id="bookingTable" style="width:100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Guests</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Bookings will be inserted here -->
+    </tbody>
+  </table>
+  <input type="submit" name="Edit">
+  </section>
+  <script src="booking.js"></script>
+</body>
+</html>
